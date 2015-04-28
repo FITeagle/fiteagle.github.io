@@ -3,7 +3,8 @@
   prefix="foaf: http://xmlns.com/foaf/0.1/
           dc: http://purl.org/dc/terms/
           schema: http://schema.org/"
-  typeof="schema:CreativeWork"
+  typeof="schema:SoftwareApplication"
+  resource="http://fiteagle.org/"
 >
 
 <head>
@@ -12,8 +13,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="FITeagle">
-    <link property="schema:creator" typeof="schema:Person" href="http://alex.willner.ws/about#me" />
-    <base href="http://fiteagle.org/" />
+    <meta property="schema:operatingSystem" content="Java">
+    <meta property="schema:applicationCategory" content="Resource Management Framework">
+    <link property="schema:creator" typeof="schema:Person" href="http://alex.willner.ws/about#me">
+    <link property="schema:sameAs" href="http://fiteagle.github.io/">
     <title>FITeagle | Semantic Resource Management Framework</title>
 
     <!-- Bootstrap Core CSS -->
@@ -85,8 +88,12 @@
                             <li>
                                 <a href="https://twitter.com/fiteagle" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
-                            <li>
-                                <a href="https://github.com/fiteagle/bootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <li resource="http://fiteagle.org#source" typeof="schema:Code">
+                            	<span property="schema:programmingLanguage" content="Java 8"/>
+								<span property="schema:runtime" content="J2EE"/>
+								<span property="schema:sampleType" content="Full Solution"/>
+								<a rel="schema:targetProduct" href="http://fiteagle.org/"/>
+                                <a rel="schema:codeRepository" href="https://github.com/fiteagle/bootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                             </li>
                         </ul>
                     </div>
