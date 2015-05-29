@@ -300,12 +300,15 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Open-Multinet support:<br>Try it out</h2>
                     <p class="lead">
-                    	We are approaching the era of the multinet. Instead of the one internet, we will have a multitude of parallel networks, customized by you to include anything and anyone you wish.</p>
-                    	<p>You can currently access a running version of the Open Multinet Java API by sending a request to the web service located at http://federation.av.tu-berlin.de:8080/omnlib/convert/, along with the location of a local file, the type of RSpec and the type of output file desired. For example:</p>
-                    	<code>
+                    	At the heart of the FITeagle framework is the Open Multinet information model. Built upon a solid base of earlier research in semantic network description, it is used to describe resources, including all aspects of the resource lifecycle. Drawing upon the well-established semantic web stack of technologies, RDF triple stores are built up to describe any existing or desired resource. In this way, information about a resource can be easily extracted, separating it from the concrete syntax of a given resource description, thus increasing the scalability and extensibility of the framework.
+                    </p>
+                    <p>
+                    	For legacy and interoperability purposes, the Open Multinet Java API provides a translator. The API's web service, built on REST principles, can translate from Open Multinet to GENI RSpec or OASIS TOSCA and back. You can currently access a running version of the Open Multinet Java API by sending a request to the web service located at http://federation.av.tu-berlin.de:8080/omnlib/convert/, along with the location of a local file, the type of RSpec and the type of output file desired. For example:
+                    </p>
+                    <code>
                     	<!-- curl --data-urlencode content@src/test/resources/geni/examples1/listResources-23-2015-5-6-16-40-43-943.xml http://federation.av.tu-berlin.de:8080/omnlib/convert/advertisement/ttl-->
                     	curl --data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://federation.av.tu-berlin.de:8080/omnlib/convert/request/ttl
-                    	</code>
+                    </code><br />
                     	<!-- TODO (robynml)
                     	Planned:
                     	<code>
@@ -316,7 +319,8 @@
                     	<a target="_blank" href="http://demo.fiteagle.org/omnlib">omnlib web</a>
                     	To be moved here when working. Current location is http://federation.av.tu-berlin.de:8080/omnlib/
                     	-->
-                    	<p>For more information, see our documentation over at
+                    <p>
+                    	For more information, see our documentation over at
                     	<a target="_blank" href="http://open-multinet.info/">open-multinet.info</a>.
                     </p>
                 </div>
