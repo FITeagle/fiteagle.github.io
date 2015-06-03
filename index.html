@@ -315,9 +315,8 @@
                     	For legacy and interoperability purposes, the Open Multinet Java API provides a translator. The API's web service, built on REST principles, can translate from Open Multinet to GENI RSpec or OASIS TOSCA and back. You can currently access a running version of the Open Multinet Java API by sending a request to the web service located at http://federation.av.tu-berlin.de:8080/omnlib/convert/, along with the location of a local file, the type of RSpec and the type of output file desired. For example:
                     </p>
                     <code>
-                    	<!-- curl --data-urlencode content@src/test/resources/geni/examples1/listResources-23-2015-5-6-16-40-43-943.xml http://federation.av.tu-berlin.de:8080/omnlib/convert/advertisement/ttl-->
-                    	curl --data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://federation.av.tu-berlin.de:8080/omnlib/convert/request/ttl
-                    </code><br />
+                    	curl --data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://demo.fiteagle.org:8080/omnlib/convert/request/ttl
+                    </code><br /><br />
                     	<!-- TODO (robynml)
                     	Planned:
                     	<code>
