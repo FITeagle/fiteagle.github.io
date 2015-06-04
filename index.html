@@ -138,7 +138,7 @@
     <section class="content-section-a" id="about">
       <div class="container">
           <article class="row">
-              <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-6">
                   <hr class="section-heading-spacer">
                   <div class="clearfix"></div>
                     <h2 class="section-heading">About:<br>What is this?</h2>
@@ -148,12 +148,23 @@
                       <a href="http://en.wikipedia.org/wiki/Microservices">microservices-based</a>
                       <a href="http://en.wikipedia.org/wiki/Resource_management">resource management</a> toolkit
                       for
-                      <a href="http://en.wikipedia.org/wiki/Federation_%28information_technology%29">federated</a> infrastructures.
-
-                      It provides an extensible framework to seamlessly
-          		        provision, monitor and control arbitrary resources in
-          		        infrastructures, such as <a href="http://en.wikipedia.org/wiki/Testbed">testbeds</a>,
-                      including interoperability with other tools by implementing related standard APIs.
+                      <a href="http://en.wikipedia.org/wiki/Federation_%28information_technology%29">federated</a> infrastructures,
+                      such as <a href="http://en.wikipedia.org/wiki/Testbed">testbeds</a>.
+                      </p>
+                      <p class="lead">
+                      Our <a href="#open">open-source</a>
+                      toolkit is extensible by <a href="#adapters">resource adapters</a>
+                      and configured to run in a <a href="#docker">Docker</a>-based
+                      <a href="#j2ee">WildFly</a> environment.
+                      By adopting <a href="#rdf">Semantic Web</a> technologies
+                      and the <a href="#omn">Open-Multinet ontology</a>
+                      it seamlessly provisions, monitors and controls arbitrary resources in
+          		        infrastructures.
+                      To ensure interoperability with other technologies,
+                      we are following related standard APIs such as <a href="#sfa">SFA</a>
+                      or <a href="#openstack">OpenStack</a>.
+                      Further, we are <a href="#papers">publishing scientific results</a>
+                      and follow <a href="#travis">clean code</a> paradigms.
                       </p>
                     <p>
                       While the main focus in its initial developments
@@ -182,7 +193,7 @@
     <!-- /.content-section-b -->
 
     <!-- Extensibility -->
-    <section class="content-section-b">
+    <section class="content-section-b"  id="adapters">
         <div class="container">
             <article class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
@@ -202,7 +213,7 @@
                     </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/ext.jpg" alt="">
+                    <img class="img-responsive" src="img/ext.png" alt="">
                 </div>
             </article>
 
@@ -238,7 +249,7 @@
     <!-- /.content-section-a -->
 
     <!-- WildFly -->
-    <section class="content-section-b">
+    <section class="content-section-b"  id="j2ee">
         <div class="container">
 
             <article class="row">
@@ -266,7 +277,7 @@
     <!-- /.content-section-b -->
 
     <!-- SFA support -->
-    <section class="content-section-a">
+    <section class="content-section-a" id="sfa">
         <div class="container">
 
             <article class="row">
@@ -295,7 +306,7 @@
     <!-- /.content-section-a -->
 
     <!-- Open Source -->
-    <section class="content-section-b">
+    <section class="content-section-b"  id="open">
         <div class="container">
 
             <article class="row">
@@ -325,7 +336,7 @@
 
     <!-- /.content-section-a -->
     <!-- Open-Multinet -->
-    <section class="content-section-a">
+    <section class="content-section-a" id="omn">
         <div class="container">
 
             <article class="row">
@@ -347,7 +358,7 @@
                         the type of RSpec and the type of output file desired. For example:
                     </p>
                     <code>
-                      curl &#45;&#45;data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://demo.fiteagle.org:8080/omnlib/convert/request/ttl
+                      curl \ <br>&#45;&#45;data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://demo.fiteagle.org:8080/omnlib/convert/request/ttl
                     </code><br /><br />
                       <!-- TODO (robynml)
                       Planned:
@@ -376,7 +387,7 @@
     <!-- /.content-section-a -->
 
     <!-- Semantic Driven -->
-    <section class="content-section-b">
+    <section class="content-section-b"  id="rdf">
         <div class="container">
 
             <article class="row">
@@ -407,7 +418,7 @@
 
     <!-- /.content-section-a -->
     <!-- Travis CI -->
-    <section class="content-section-a">
+    <section class="content-section-a"  id="travis">
         <div class="container">
 
             <article class="row">
@@ -452,7 +463,7 @@
     <!-- /.content-section-a -->
 
     <!-- Publications -->
-    <section class="content-section-b">
+    <section class="content-section-b"  id="papers">
         <div class="container">
 
             <article class="row">
@@ -484,7 +495,7 @@
 
     <!-- /.content-section-a -->
     <!-- Openstack -->
-    <section class="content-section-a">
+    <section class="content-section-a"  id="openstack">
         <div class="container">
 
             <article class="row">
