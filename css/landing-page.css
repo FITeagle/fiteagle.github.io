@@ -22,7 +22,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -183,4 +183,8 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.container {
+  word-wrap:break-word;
 }
