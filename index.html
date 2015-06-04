@@ -8,7 +8,6 @@
 >
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,17 +22,80 @@
     <link property="schema:creator" typeof="schema:Person" href="http://alex.willner.ws/about#me">
     <link property="schema:sameAs" href="http://fiteagle.github.io/">
     <title>FITeagle | Semantic Resource Management Framework</title>
-
-    <!-- Bootstrap Core CSS -->
+    <style>
+    html { font-family: sans-serif; font-size: 10px; }
+    body, html { width: 100%; height: 100%; }
+    body { margin: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
+    body, h1, h2, h3, h4, h5, h6 { font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; }
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+    .navbar { position: relative; min-height: 50px; margin-bottom: 20px; border: 1px solid transparent; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+    .navbar-fixed-bottom, .navbar-fixed-top { position: fixed; right: 0px; left: 0px; z-index: 1030; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; }
+    .navbar-fixed-top { top: 0px; border-width: 0px 0px 1px; }
+    .navbar-default { background-color: rgb(248, 248, 248); border-color: rgb(231, 231, 231); }
+    .topnav { font-size: 14px; }
+    .container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 750px; }
+    .navbar-header { float: left; }
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header { margin-right: 0px; margin-left: 0px; }
+    button, input, optgroup, select, textarea { margin: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; color: inherit; }
+    button { overflow: visible; }
+    button, select { text-transform: none; }
+    button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+    button, input, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
+    .navbar-toggle { position: relative; float: right; padding: 9px 10px; margin-top: 8px; margin-right: 15px; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid transparent; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; display: none; }
+    .navbar-default .navbar-toggle { border-color: rgb(221, 221, 221); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); border: 0px; }
+    .navbar-toggle .icon-bar { display: block; width: 22px; height: 2px; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; }
+    .navbar-default .navbar-toggle .icon-bar { background-color: rgb(136, 136, 136); }
+    .navbar-toggle .icon-bar + .icon-bar { margin-top: 4px; }
+    a { background-color: transparent; color: rgb(51, 122, 183); text-decoration: none; }
+    .navbar-brand { float: left; height: 50px; padding: 15px; font-size: 18px; line-height: 20px; }
+    .navbar-default .navbar-brand { color: rgb(119, 119, 119); }
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: -15px; }
+    img { border: 0px; vertical-align: middle; }
+    .navbar-brand > img { display: block; }
+    .collapse { display: none; }
+    .navbar-collapse { padding-right: 15px; padding-left: 15px; overflow-x: visible; border-top-width: 0px; border-top-style: solid; border-top-color: transparent; -webkit-box-shadow: none; box-shadow: none; width: auto; }
+    .navbar-collapse.collapse { padding-bottom: 0px; display: block !important; height: auto !important; overflow: visible !important; }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse { padding-right: 0px; padding-left: 0px; }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse { max-height: 340px; }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color: rgb(231, 231, 231); }
+    ol, ul { margin-top: 0px; margin-bottom: 10px; }
+    .nav { padding-left: 0px; margin-bottom: 0px; list-style: none; }
+    .navbar-nav { margin: 0px; float: left; }
+    .navbar-right { margin-right: -15px; float: right !important; }
+    .nav > li { position: relative; display: block; }
+    .navbar-nav > li { float: left; }
+    .nav > li > a { position: relative; display: block; padding: 10px 15px; }
+    .navbar-nav > li > a { padding-top: 15px; padding-bottom: 15px; line-height: 20px; }
+    .navbar-default .navbar-nav > li > a { color: rgb(119, 119, 119); }
+    .intro-header { padding-top: 50px; padding-bottom: 50px; text-align: center; color: rgb(248, 248, 248); background-image: url(http://fiteagle.github.io/img/banner-bg3.jpg); background-attachment: fixed; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
+    .row { margin-right: -15px; margin-left: -15px; }
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+    .intro-message { position: relative; padding-top: 15%; padding-bottom: 15%; }
+    h1 { margin: 0.67em 0px; font-size: 2em; }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+    .h1, .h2, .h3, h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+    .h1, h1 { font-size: 36px; }
+    .intro-message > h1, .intro-message-bootstrap > h2 { margin: 0px; text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 3px; font-size: 5em; }
+    .h3, h3 { font-size: 24px; }
+    .intro-message > h3 { text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 3px; }
+    hr { height: 0px; box-sizing: content-box; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); }
+    .intro-divider { width: 400px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(248, 248, 248); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgba(0, 0, 0, 0.2); }
+    .list-inline { padding-left: 0px; margin-left: -5px; list-style: none; }
+    .list-inline > li { display: inline-block; padding-right: 5px; padding-left: 5px; }
+    .btn { display: inline-block; padding: 6px 12px; margin-bottom: 0px; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; background-image: none; border: 1px solid transparent; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+    .btn-default { color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); border-color: rgb(204, 204, 204); }
+    .btn-group-lg > .btn, .btn-lg { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; }
+    .fa { display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; font-family: FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; }
+    .fa-fw { width: 1.28571429em; text-align: center; }
+    .network-name { text-transform: uppercase; font-size: 14px; font-weight: 400; letter-spacing: 2px; }
+    </style>
+<!--
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -613,6 +675,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        stylesheet = document.createElement('link'); stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'css/bootstrap.min.css'; document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        stylesheet = document.createElement('link'); stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'css/landing-page.css'; document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        stylesheet = document.createElement('link'); stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'font-awesome/css/font-awesome.min.css'; document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        stylesheet = document.createElement('link'); stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic'; document.getElementsByTagName('head')[0].appendChild(stylesheet);
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
