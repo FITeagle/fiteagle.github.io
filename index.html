@@ -329,27 +329,34 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Open-Multinet support:<br>Try it out</h2>
                     <p class="lead">
-                    	At the heart of the FITeagle framework is the Open Multinet information model. Built upon a solid base of earlier research in semantic network description, it is used to describe resources, including all aspects of the resource lifecycle. Drawing upon the well-established semantic web stack of technologies, RDF triple stores are built up to describe any existing or desired resource. In this way, information about a resource can be easily extracted, separating it from the concrete syntax of a given resource description, thus increasing the scalability and extensibility of the framework.
-                    </p>
-                    <p>
-                    	For legacy and interoperability purposes, the Open Multinet Java API provides a translator. The API's web service, built on REST principles, can translate from Open Multinet to GENI RSpec or OASIS TOSCA and back. You can currently access a running version of the Open Multinet Java API by sending a request to the web service located at http://demo.fiteagle.org:8080/omnlib/convert/, along with the location of a local file, the type of RSpec and the type of output file desired. For example:
+                    	At the heart of our toolkit is the Open-Multinet semantic information model.
+                      Built upon a solid base of earlier research in semantic descriptions,
+                      it is used to describe all resource information.
+                      For legacy and interoperability purposes,
+                        we further provide a translator.
+                      The API's REST web service, can translate from Open-Multinet
+                      to GENI RSpec or OASIS TOSCA and back.
+                      You can currently access a running version of the Open-Multinet Java API
+                      by sending a request to the web service located at
+                       http://demo.fiteagle.org:8080/omnlib/convert/, along with the location of a local file,
+                        the type of RSpec and the type of output file desired. For example:
                     </p>
                     <code>
-                    	curl --data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://demo.fiteagle.org:8080/omnlib/convert/request/ttl
+                      curl --data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://demo.fiteagle.org:8080/omnlib/convert/request/ttl
                     </code><br /><br />
-                    	<!-- TODO (robynml)
-                    	Planned:
-                    	<code>
-                    	curl --data-urlencode content@URL http://demo.fiteagle.org/omnlib/convert/to/tosca
-                    	</code>
+                      <!-- TODO (robynml)
+                      Planned:
+                      <code>
+                      curl --data-urlencode content@URL http://demo.fiteagle.org/omnlib/convert/to/tosca
+                      </code>
 
-                    	Try it via web? Go to
-                    	<a target="_blank" href="http://demo.fiteagle.org/omnlib">omnlib web</a>
-                    	To be moved here when working. Current location is http://federation.av.tu-berlin.de:8080/omnlib/
-                    	-->
+                      Try it via web? Go to
+                      <a target="_blank" href="http://demo.fiteagle.org/omnlib">omnlib web</a>
+                      To be moved here when working. Current location is http://federation.av.tu-berlin.de:8080/omnlib/
+                      -->
+
                     <p>
-                    	For more information, see our documentation over at
-                    	<a target="_blank" href="http://open-multinet.info/">open-multinet.info</a>.
+                      <a href="">Learn more about the Open-Multinet ontology</a>.
                     </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -371,10 +378,17 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Semantic driven:</h2>
+                    <h2 class="section-heading">Semantic Web:<br>One graph to rule them all</h2>
                     <p class="lead">
-                    	<a href="https://github.com/FITeagle/bootstrap/wiki/Semantic-Web-%7C%C2%A0LodLive">LodLive</a>
+                      Drawing upon the well-established semantic web stack of technologies,
+                       RDF triple stores are built up to describe any existing or desired resource.
+                        In this way, information about a resource can be easily extracted, separating it from the concrete syntax of a given resource description,
+                        thus increasing the scalability and extensibility of the framework.
                     </p>
+                    <p >
+                    	<a href="https://github.com/FITeagle/bootstrap/wiki/Semantic-Web-%7C%C2%A0LodLive">Learn more about the use of Semantic Web tools in FITeagle</a>.
+                    </p>
+
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/lod.png" alt="">
@@ -397,10 +411,19 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Travis Integration:<br>A software you can trust</h2>
                     <p class="lead">
-                    We use the continous integration services provided by <a href="http://travis-ci.org">Travis-CI</a> to build and test every commit to the FITeagle git.
-                    During build &amp; testing the test coverage is calculated, too. Below the CI status is shown for each component of FITeagle.
-                    On Success the resulting build Artefacts are pushed to our snapshot repository.
-                    These snapshot builds are used ba the docker based deployment (<a href="#docker">see above</a>) for tour demo installation at <a href="https://demo.fiteagle.org">https://demo.fiteagle.org</a>
+                      We apply
+                      Test Driven Development (TDD),
+                      Continuous Integration (CI),
+                      Continous Delivery (CD),
+                      Code Coverage (CC),
+                      software container deplyoments (Docker),
+                      distributed source control (GIT) and
+                      internally the Scrum framework
+                      to ensure high quality of our software by following latest trends in this context.
+                      To build and test every commit to our toolkit and its adapters,
+                      we use services provided by <a href="http://travis-ci.org">Travis-CI</a>.
+                      Below the CI status is shown for each component of FITeagle and
+                      these snapshot builds are used by the docker based deployment for tour demo installation at <a href="https://demo.fiteagle.org">https://demo.fiteagle.org</a>
                     </p>
                     <dl class="dl-horizontal">
                     <dt>API</dt>
