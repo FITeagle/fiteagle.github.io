@@ -188,6 +188,11 @@ p.copyright {
 article.row {
   text-align: justify;
   word-wrap:break-word;
+   -moz-hyphens: auto;
+   -o-hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto; 
 }
 
 code {
