@@ -284,9 +284,11 @@
                       our toolkit provides compatibility with
                       the GENI Aggregate Manger API Version 3
                       and passes all jFed acceptence tests.
+                      You can test our demo installation at
+                      <a href="https://demo.fiteagle.org">https://demo.fiteagle.org</a>.
                     </p>
                     <p>
-                      <a target="_blank" href="http://jfed.iminds.be/">Learn more about JFed</a>.
+                      <a target="_blank" href="https://github.com/FITeagle/bootstrap/wiki/LiveDemo">Learn more about the demo setup</a>.
                     </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -352,7 +354,7 @@
                         the type of RSpec and the type of output file desired. For example:
                     </p>
                     <code>
-                      curl &#45;&#45;data-urlencode content@src/test/resources/geni/request/request_unbound.xml http://demo.fiteagle.org:8080/omnlib/convert/request/ttl
+                      curl -k &#45;&#45;data-urlencode content="$(curl -Ls http://fiteagle.org/request)" https://demo.fiteagle.org/omnlib/convert/request/ttl
                     </code><br /><br />
                       <!-- TODO (robynml)
                       Planned:
