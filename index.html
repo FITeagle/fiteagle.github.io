@@ -2,7 +2,8 @@
 <html lang="en"
   prefix="foaf: http://xmlns.com/foaf/0.1/
           dc: http://purl.org/dc/terms/
-          schema: http://schema.org/"
+          schema: http://schema.org/
+          og: http://ogp.me/ns#"
   typeof="schema:SoftwareApplication"
   resource="http://fiteagle.org/"
 >
@@ -72,13 +73,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1 property="schema:name">FITeagle</h1>
+                        <h1 property="og:title schema:name">FITeagle</h1>
                         <h3 property="schema:description">A Semantic Resource Management Framework</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li resource="http://fiteagle.org#source" typeof="schema:SoftwareSourceCode">
                             	<span property="schema:programmingLanguage" content="Java 8"></span>
-                              <a rel="schema:image" href="img/fiteagle.png"></a>
+                              <span property="og:type" content="schema:SoftwareSourceCode"></span>
+                              <span property="og:url" content="http://fiteagle.org"></span>
+                              <a rel="og:image schema:image" href="img/fiteagle.png"></a>
 								<span property="schema:runtime" content="J2EE"></span>
 								<span property="schema:sampleType" content="Full Solution"></span>
 								<a rel="schema:targetProduct" href="http://fiteagle.org/"></a>
