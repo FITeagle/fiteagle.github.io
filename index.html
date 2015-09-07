@@ -6,7 +6,6 @@
   typeof="schema:SoftwareApplication"
   resource="http://fiteagle.org/"
 >
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,6 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="alternate" type="application/atom+xml" title="Core Code Changes" href="https://github.com/fiteagle/core/commits/master.atom" />
     <link rel="alternate" type="application/atom+xml" title="SFA Code Changes" href="https://github.com/fiteagle/sfa/commits/master.atom" />
-
     <meta property="schema:operatingSystem" content="Java">
     <meta property="schema:applicationCategory" content="Resource Management Framework">
     <link property="schema:creator" typeof="schema:Person" href="http://alex.willner.ws/about#me">
@@ -34,11 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -51,7 +46,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand topnav" href="#start">
-                <img alt="FITeagle Logo" property="schema:logo" src="img/fiteagle.png" style="width:20px; float:left; margin-right:.5em;"/>FITeagle</a>
+                <img alt="FITeagle Logo" src="img/fiteagle.png" style="width:20px; float:left; margin-right:.5em;"/>FITeagle</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -71,8 +66,6 @@
         </div>
         <!-- /.container -->
     </nav>
-
-
     <!-- Header -->
     <header class="intro-header" id="start">
         <div class="container">
@@ -83,8 +76,9 @@
                         <h3 property="schema:description">A Semantic Resource Management Framework</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
-                            <li resource="http://fiteagle.org#source" typeof="schema:Code">
+                            <li resource="http://fiteagle.org#source" typeof="schema:SoftwareSourceCode">
                             	<span property="schema:programmingLanguage" content="Java 8"></span>
+                              <a rel="schema:image" href="img/fiteagle.png"></a>
 								<span property="schema:runtime" content="J2EE"></span>
 								<span property="schema:sampleType" content="Full Solution"></span>
 								<a rel="schema:targetProduct" href="http://fiteagle.org/"></a>
@@ -100,13 +94,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
     </header>
     <!-- /.intro-header -->
-
     <!-- Page Content -->
     <section class="intro-bootstrap" id="bootstrap">
         <div class="container">
@@ -122,12 +113,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
     </section>
-
     <!-- About -->
     <section class="content-section-a" id="about">
       <div class="container">
@@ -180,12 +168,10 @@
                     <img class="img-responsive" src="img/fiteagle.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- Extensibility -->
     <section class="content-section-b"  id="adapters">
         <div class="container">
@@ -210,12 +196,10 @@
                     <img class="img-responsive" src="img/ext.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- Docker -->
     <section class="content-section-a" id="docker">
         <div class="container">
@@ -237,17 +221,13 @@
                     <img class="img-responsive" src="img/docker.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
-
     </section>
     <!-- /.content-section-a -->
-
     <!-- WildFly -->
     <section class="content-section-b"  id="j2ee">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
@@ -266,16 +246,13 @@
                     <img class="img-responsive" src="img/wildfly.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- SFA support -->
     <section class="content-section-a" id="sfa">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
@@ -297,16 +274,13 @@
                     <img class="img-responsive" src="img/jfed.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-a -->
-
     <!-- Open Source -->
     <section class="content-section-b"  id="open">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
@@ -327,16 +301,13 @@
                     <img class="img-responsive" src="img/os.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
-
     <!-- /.content-section-a -->
     <!-- Open-Multinet -->
     <section class="content-section-a" id="omn">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
@@ -363,7 +334,6 @@
                       <code>
                       curl --data-urlencode content@URL http://demo.fiteagle.org/omnlib/convert/to/tosca
                       </code>
-
                       Try it via web? Go to
                       <a target="_blank" href="http://demo.fiteagle.org/omnlib">omnlib web</a>
                       To be moved here when working. Current location is http://federation.av.tu-berlin.de:8080/omnlib/
@@ -380,17 +350,13 @@
                     <img class="img-responsive" src="img/omn.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
-
     </section>
     <!-- /.content-section-a -->
-
     <!-- Semantic Driven -->
     <section class="content-section-b"  id="rdf">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
@@ -405,23 +371,19 @@
                     <p >
                     	<a href="https://github.com/FITeagle/bootstrap/wiki/Semantic-Web-%7C%C2%A0LodLive">Learn more about the use of Semantic Web tools in FITeagle</a>.
                     </p>
-
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/lod.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- /.content-section-a -->
     <!-- Travis CI -->
     <section class="content-section-a"  id="travis">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
@@ -459,16 +421,13 @@
                     <img class="img-responsive" src="img/travis.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-a -->
-
     <!-- Publications -->
     <section class="content-section-b"  id="papers">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
@@ -490,17 +449,14 @@
                     <img class="img-responsive" src="img/pub.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- /.content-section-a -->
     <!-- Openstack -->
     <section class="content-section-a"  id="openstack">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
@@ -518,16 +474,13 @@
                     <img class="img-responsive" src="img/openstack.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-a -->
-
     <!-- OMSP -->
     <section class="content-section-b"  id="omsp">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
@@ -543,7 +496,6 @@
                       and representation.<br>
                       Furthermore, using monitoring resource adapters, you can also export data as
                       OMSP streams to any OMSP collection endpoint.<br>
-
 <a href="http://oml.mytestbed.net/doc/oml/2.11/doxygen/omsp.html">More information about OMSP protocol</a>, and <a href="http://oml.mytestbed.net/projects/oml">OML framework</a>.
                     </p>
                 </div>
@@ -551,16 +503,13 @@
                     <img class="img-responsive" src="img/oml2.png" alt="">
                 </div>
             </article>
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- Contact -->
     <section class="content-section-b" id="contact">
         <div class="container">
-
             <article class="row">
                 <div class="col-lg-12   col-sm-6">
                     <hr class="section-heading-spacer">
@@ -600,7 +549,6 @@
                             <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
                         </div>
                     </form>
-
                     <div id="thanks" style="display:none;">
                       <p class="lead">
                       Thank you for your feedback.
@@ -628,7 +576,6 @@
         <!-- /.container -->
     </section>
     <!-- /.content-section-b -->
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -656,7 +603,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         stylesheet = document.createElement('link'); stylesheet.rel = 'stylesheet';
         stylesheet.href = 'css/bootstrap.min.css'; document.getElementsByTagName('head')[0].appendChild(stylesheet);
@@ -667,10 +613,8 @@
         stylesheet = document.createElement('link'); stylesheet.rel = 'stylesheet';
         stylesheet.href = 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic'; document.getElementsByTagName('head')[0].appendChild(stylesheet);
     </script>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -711,7 +655,6 @@
 		speed :	0.25
 	});
     </script>
-
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
@@ -728,5 +671,4 @@
     <noscript><p><img src="//services.av.tu-berlin.de/piwik/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
     <!-- End Piwik Code -->
 </body>
-
 </html>
