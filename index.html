@@ -330,17 +330,8 @@
                         the type of RSpec and the type of output file desired. For example:
                     </p>
                     <code>
-                      curl -k &#45;&#45;data-urlencode content="$(curl -Lsk http://fiteagle.org/request)" https://demo.fiteagle.org/omnlib/convert/request/ttl
+                    	curl -k &#45;&#45;data-urlencode content="$(curl -Lsk http://demo.fiteagle.org:8080/omnweb/request.xml)" https://demo.fiteagle.org/omnweb/convert/request/ttl
                     </code><br /><br />
-                      <!-- TODO (robynml)
-                      Planned:
-                      <code>
-                      curl --data-urlencode content@URL http://demo.fiteagle.org/omnlib/convert/to/tosca
-                      </code>
-                      Try it via web? Go to
-                      <a target="_blank" href="http://demo.fiteagle.org/omnlib">omnlib web</a>
-                      To be moved here when working. Current location is http://federation.av.tu-berlin.de:8080/omnlib/
-                      -->
 			<p>Alternatively, you can convert an RSpec
 				or Tosca document to or from Open Multinet via the web interface
 				<a href="http://demo.fiteagle.org:8080/omnweb/">http://demo.fiteagle.org:8080/omnweb/</a>.
